@@ -1,0 +1,101 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+ background-image: url("../public/chatBack.jpg");
+ background-repeat: no-repeat;
+ background-size:cover;
+ background-position:center;
+ background-attachment: fixed;
+ /* background-color: black;*/
+
+}
+
+
+
+
+
+@media (max-width:768px){
+	body{
+		background-image: url("../public/chatBackMobile.jpg");
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center;
+		background-attachment: fixed;
+	
+		/* background-color: black;*/
+	   
+	   }
+}
+
+
+/* Hide the scrollbar by default for WebKit browsers */
+::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+  background: transparent; /* Background for the track */
+}
+
+/* Show scrollbar on hover for WebKit browsers */
+*::-webkit-scrollbar:hover {
+  width: 8px; /* Show scrollbar on hover */
+}
+
+*::-webkit-scrollbar-track {
+  background:black; /* Background of the scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background:black; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: black; /* Color of the thumb on hover */
+}
+
+/* Hide the scrollbar by default for Firefox */
+* {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* Show scrollbar on hover for Firefox */
+*:hover {
+  scrollbar-width:thin; /* Show thin scrollbar */
+  scrollbar-color:black grey; /* Thumb color and track color */
+}
+
+
+.shake {
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.2s both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+

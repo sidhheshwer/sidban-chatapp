@@ -1,0 +1,79 @@
+.sidbanHeadHome{
+    width: 100%;
+
+    margin: -10px 0px 10px 0px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: absolute;
+    z-index: 1;
+ 
+
+    
+}
+
+
+
+.chatDiv{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    column-gap: 30px;
+    width: 700px;
+  
+    margin:20px auto 20px auto;
+    background-color: rgba(20, 17, 17, 0.5);
+    color: white;
+    border-radius: 10px;
+    padding: 50px;
+    backdrop-filter: blur(1px);
+
+}
+
+.chatIconHome{
+    
+    color: red;
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+    .sidbanHeadHome{
+        width: 250px;
+        height: 50px;
+        margin: -30px 0px 10px -20px;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        position: absolute;
+        z-index: 1;
+      
+     
+    
+        
+    }
+    .chatDiv{
+       
+
+      
+       
+    
+        width: 360px;
+        height: 100vh;
+        margin:0px auto 0px auto;
+        padding: 40px;
+        backdrop-filter: blur(1px);
+
+    
+    }
+
+   
+
+   
+
+}

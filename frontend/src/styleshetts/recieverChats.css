@@ -1,0 +1,63 @@
+.reciverContainer {
+    display: flex; /* Make the container a flexbox */
+    flex-direction: column; /* Stack messages vertically */
+    align-items: flex-start; /* Align all messages to the left */
+}
+
+.receiverMessage {
+    background-color:rgb(99, 76, 76); /* White for received message */
+    color: white; /* Dark text color */
+    padding: 10px 15px; /* Padding for the message bubble */
+    border-radius: 20px; /* Rounded corners */
+    max-width: 75%; /* Maximum width of the message */
+    margin: 10px 0; /* Margin for spacing */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.receiverImg {
+    width: 30px; /* Image width */
+    height: 30px; /* Image height */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Space between the image and text */
+}
+
+.reciverTime {
+    font-size: 0.8em; /* Smaller text for the timestamp */
+    color: white; /* Grey color for the timestamp */
+    margin-top: 5px; /* Space between the message and timestamp */
+    padding: 2px;
+}
+
+
+@media (max-width:768px){
+  
+    
+    .receiverMessage {
+        background-color:rgba(255, 255, 255, 0.5); /* White for received message */
+        color: black; /* Dark text color */
+        padding: 10px 15px; /* Padding for the message bubble */
+        border-radius: 20px; /* Rounded corners */
+        max-width: 100%; /* Maximum width of the message */
+        margin: 10px 0; /* Margin for spacing */
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Center items vertically */
+        font-size: 160%;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .receiverImg {
+        width: 50px; /* Image width */
+        height: 50px; /* Image height */
+        border-radius: 50%; /* Make the image circular */
+        margin-right: 10px; /* Space between the image and text */
+    }
+    
+    .reciverTime {
+        font-size: 1em; /* Smaller text for the timestamp */
+        color:white; /* Grey color for the timestamp */
+        margin-top: 5px; /* Space between the message and timestamp */
+        padding: 2px;
+    }
+      
+}

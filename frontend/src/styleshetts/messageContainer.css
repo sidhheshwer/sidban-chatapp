@@ -1,0 +1,171 @@
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 10px;
+    align-content: center;
+    height: 50px;
+   background-color: black;
+   padding: 10px;
+}
+
+.headerImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+}
+.headerName{
+    margin-left: 10px; 
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.headerClose{
+  position: absolute;
+  margin: 10px 0px 0px 290px;
+  width: 25px;
+  height: 25px;
+   cursor: pointer;
+}
+
+.messageContainer{
+ width: 350px;
+
+
+ 
+  
+}
+.messageDiv{
+    margin: 0px auto 0px auto;
+    height: 400px;
+  /*  max-height: 400px;*/
+    overflow: auto;
+ 
+}
+
+.noChatsDiv{
+    position: absolute;
+    margin:200px auto 0px 30px;
+     text-align: center;
+     font-size: 12px;
+     padding: 10px;
+     width: 350px;
+     height: 400px;
+   
+}
+
+.chatIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.startMessage{
+    width: 280px;
+    font-size: 16px;
+    margin: 20px auto 0px 50px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(136, 132, 132);
+}
+
+
+@media(max-width:768px){
+  
+
+
+
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        border-radius: 10px;
+        align-content: center;
+        height: 80px;
+       background-color: black;
+       padding: 10px;
+    }
+    
+    .headerImg{
+        width: 60px;
+        height: 60px;
+        margin-right: 0px;
+    }
+    .headerName{
+        margin-left: 20px; 
+        margin-top: 6px;
+        font-size: 180%;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .headerClose{
+      position: absolute;
+      margin: 20px 0px 0px 350px;
+      width: 30px;
+      height: 30px;
+       cursor: pointer;
+    }
+   
+
+    
+    .messageContainer {
+        width: 400px;
+        height: 110vh;
+        left: -800px; /* Hidden off-screen */
+        position: absolute;
+        border-radius: 10px;
+        background-color:rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        
+        transition: left 0.3s ease;
+    }
+    
+    .messageContainer.open {
+        left: 20px; /* Visible position */
+        margin: 16px auto 0px auto;
+   
+    }
+
+    .messageDiv{
+        margin: 0px auto 0px auto;
+        height: 90vh;
+      /*  max-height: 400px;*/
+        overflow: auto;
+      
+     
+    }
+
+   
+   .chatIcon{
+    display: none;
+   }
+   
+    
+ @keyframes slide {
+    0%{
+       left:-500px
+    }
+    100%{
+        left:0px ;
+    }
+    
+ }
+ 
+
+ .noChatsDiv{
+    display: none;
+   
+     
+   
+}
+    
+
+.startMessage{
+    width:100%;
+    font-size: 130%;
+    margin: 10px auto 0px 30px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(142, 141, 141);
+    
+}
+ 
+ }
+ 

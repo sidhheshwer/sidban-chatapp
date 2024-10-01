@@ -1,0 +1,186 @@
+.convo1{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px ;
+    align-content: center;
+    align-items: center;
+    margin: 10px 0px 50px 0px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 1);
+    border-radius: 10px;
+    width: 250px;
+    height: 50px; 
+    
+   
+
+
+}
+
+
+
+.convo1:hover{
+    background-color: rgb(1, 147, 147);
+    
+}
+
+.avatarImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.chatIcons{
+
+  font-size:20px;
+  
+  
+}
+
+
+.logoutDiv{
+    margin:30px 0px 10px -100px;
+       
+        position: absolute;
+}
+
+.logoutIcon{
+    
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+ 
+    
+}
+
+.conversationDiv{
+    height: 400px;
+   /* max-height: 400px;  Set a maximum height */
+    overflow-y: scroll;  /* Enable vertical scrolling */
+ 
+   
+}
+
+
+.convoSpinner {
+    display: inline-block; /* Allows it to be inline with other elements */
+    width: 20px; /* Width of the loader */
+    height: 20px; /* Height of the loader */
+    border: 4px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-top: 4px solid #f60435; /* Color of the spinner */
+    border-radius: 50%; /* Make it a circle */
+    animation: spin 0.6s linear infinite; /* Spin animation */
+    margin:0px auto 0px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* End at 360 degrees */
+    }
+}
+
+
+/*user online class*/
+
+.user-container {
+    position: relative; /* Make the container a positioning context */
+    display: inline-block; /* Keeps the container around the text */
+    padding: 10px; /* Adjust as needed */
+}
+
+.user-status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute; /* Position it absolutely */
+    margin-top: 10px; /* Adjust vertical position */
+    margin-left: 50px; /* Adjust horizontal position */
+}
+
+.online {
+    background-color: green; /* Color for online status */
+}
+
+
+
+
+@media(max-width:768px){
+  
+   
+    .convo1{
+      
+        width: 330px;
+        height: 80px;
+        font-size: 160%;
+       
+    }
+
+    .conversationDiv{
+        width: 350px;
+        height: 100vh;
+       /* max-height: 400px;  Set a maximum height */
+        overflow:auto ;  /* Enable vertical scrolling */
+       margin-top: 0px;
+       justify-content: center;
+    
+      
+    }
+
+    .avatarImg{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+
+
+    .logoutDiv{
+       
+        margin:-745px 0px 10px 340px;
+       
+        position: absolute;
+        
+     
+    }
+    .logoutIcon{
+    
+      
+        width:50px;
+        height: 30px;
+     
+        
+    }
+
+    .chatIcons{
+
+        font-size:25px;
+        
+        
+        
+      }
+   
+      .user-status {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(6, 197, 6);
+        position: absolute; /* Position it absolutely */
+        margin-top: 10px; /* Adjust vertical position */
+        margin-left: 40px; /* Adjust horizontal position */
+    }
+
+
+    .convoSpinner {
+        display: inline-block; /* Allows it to be inline with other elements */
+        width: 25px; /* Width of the loader */
+        height: 25px; /* Height of the loader */
+        border: 4px solid rgba(0, 0, 0, 0.1); /* Light border */
+        border-top: 4px solid #f60435; /* Color of the spinner */
+        border-radius: 50%; /* Make it a circle */
+        animation: spin 0.6s linear infinite; /* Spin animation */
+        margin:50px auto 0px 170px;
+    }
+}

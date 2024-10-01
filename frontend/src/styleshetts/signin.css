@@ -1,0 +1,157 @@
+.sidbanHead{
+    width: 250px;
+    height: auto;
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+ 
+    
+ 
+
+    
+}
+.formDiv{
+  
+    background-color: grey;
+    border-radius: 10%;
+    width: 300px;
+    margin: 10% auto 0% auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter:blur(1px) ;
+    color: white;
+    padding: 20px;
+}
+
+.inpt{
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+   
+}
+
+label{
+    color: white;
+    font-size:large;
+    text-align: start;
+}
+h3{
+   
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+ 
+}
+
+.link1{
+    color: white;
+    text-decoration: none;
+    font-size: small; 
+    
+}
+
+
+.signInSpinner {
+    display: inline-block; /* Allows it to be inline with other elements */
+    width: 20px; /* Width of the loader */
+    height: 20px; /* Height of the loader */
+    border: 4px solid rgba(255, 253, 253, 0.1); /* Light border */
+    border-top: 4px solid #f60435; /* Color of the spinner */
+    border-radius: 50%; /* Make it a circle */
+    animation: spin 0.6s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* End at 360 degrees */
+    }
+}
+
+
+
+
+
+
+@media(max-width:768px){
+
+    .sidbanHead{
+        width: 300px;
+        height: auto;
+        text-align: start;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        margin: 10px auto 10px auto;
+        padding: 8px;
+     
+        
+     
+    
+        
+    }
+    .formDiv{
+  
+    
+     
+        width:80vw;
+        height: auto;
+        margin: 35% auto 0% auto;
+      
+    }
+    
+    .inpt{
+        width: 250px;
+      
+        font-size: larger;
+    }
+    
+    label{
+       
+        font-size:larger;
+      
+    }
+  
+    .link1{
+        color: rgb(205, 145, 145);
+        text-decoration: none;
+        font-size: large; 
+        font-weight: bold;
+        
+    }
+
+    
+    button{
+    
+        width: 100px;
+    
+     
+    }
+    
+ 
+    
+    
+    .signInSpinner {
+       
+        width: 20px; /* Width of the loader */
+        height: 20px; /* Height of the loader */
+       
+    }
+    
+
+   
+
+}

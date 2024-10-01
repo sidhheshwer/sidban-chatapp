@@ -1,0 +1,83 @@
+.chat-skeleton-loader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 80px; /* Space between messages */
+    margin-top: 10px;
+}
+
+.chat-skeleton-loader2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 80px; /* Space between messages */
+}
+
+.chat-skeleton-loader3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 80px; /* Space between messages */
+}
+
+
+
+.skeleton-message {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #332d2d; /* Background color for the skeleton */
+    animation:  pulse 1s forwards ;
+    width: 150px;
+    height: 50px;
+    gap: 10px;
+}
+
+.skeleton-avatar {
+    width: 5px; /* Avatar size */
+    height: 5px; /* Avatar size */
+    border-radius: 50%;
+    background-color: #181313; /* Avatar color */
+    margin-right: 10px; /* Space between avatar and text */
+}
+
+.skeleton-text {
+    flex: 1; /* Take up remaining space */
+}
+
+.skeleton-line {
+    height: 2px; /* Height of lines */
+    background-color: #b0b0b0; /* Line color */
+    margin: 5px 0; /* Space between lines */
+    border-radius: 4px; /* Rounded edges */
+}
+
+.skeleton-line.short {
+    width: 100%; /* Width for short line */
+}
+
+.skeleton-line.long {
+    width: 100%; /* Width for long line */
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #282222;
+    }
+    50% {
+        background-color: #ffffff; /* Lighter color for pulse effect */
+    }
+    100% {
+        background-color: #353333;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
