@@ -17,15 +17,16 @@ export   async function handleSignin(req,res){
     let salt=await bcrypt.genSalt(10);
     let hashPassword=await bcrypt.hash(password,salt);
     
-    let boyProfilePic=`https://avatar.iran.liara.run/public/boy?username=${username}`;
-    let girlProfilePic=`https://avatar.iran.liara.run/public/girl?username=${username}`;
+   // let boyProfilePic=`https://avatar.iran.liara.run/public/boy?username=${username}`;
+   // let girlProfilePic=`https://avatar.iran.liara.run/public/girl?username=${username}`;
     
     let newUser=new User({
         fullName:fullName,
         username:username,
         password:hashPassword,
         gender:gender,
-        profilePic:gender==="male"?boyProfilePic:girlProfilePic
+        //profilePic:gender==="male"?boyProfilePic:girlProfilePic
+       profilePic :`https://api.dicebear.com/9.x/adventurer/svg?seed=${encodeURIComponent(username)}`
     });
 
     if(newUser){
